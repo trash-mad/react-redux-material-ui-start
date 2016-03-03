@@ -1,22 +1,20 @@
 import React, {Component, PropTypes} from 'react'
+import SelectField from 'material-ui/lib/select-field'
+import MenuItem from 'material-ui/lib/menus/menu-item'
 
 export default class Picker extends Component {
   render() {
     const {value, onChange, options} = this.props
 
     return (
-      <span>
-        <h1>{value}</h1>
-        <select
-          onChange={e => onChange(e.target.value) }
-          value={value}>
+      <SelectField
+        value={value}
+        onChange={(event, index, value) => onChange(value)} >
           {options.map(option =>
-            <option value={option} key={option}>
-              {option}
-            </option>)
+            <MenuItem value={option} primaryText={option}>
+            </MenuItem>)
           }
-        </select>
-      </span>
+      </SelectField>
     )
   }
 }

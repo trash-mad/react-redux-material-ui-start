@@ -1,13 +1,17 @@
 import React, {PropTypes, Component} from 'react'
+import List from 'material-ui/lib/lists/list'
+import ListItem from 'material-ui/lib/lists/list-item'
 
 export default class Posts extends Component {
   render() {
     return (
-      <ul>
-        {this.props.posts.map((post, i) =>
-          <li key={i}>{post.title}</li>
-        )}
-      </ul>
+      <div className="margin-1">
+        <List>
+          {this.props.posts.map((post, i) =>
+            <ListItem primaryText={post.title} />
+          )}
+        </List>
+      </div>
     )
   }
 }
