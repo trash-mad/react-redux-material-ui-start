@@ -1,7 +1,6 @@
-
 # react-redux-material-ui-start
 Starter kit for using react, redux, webpack, babel and material ui
-Thanks to React&Redux boilerplate for the inspiration and help setting up
+>Thanks to React&Redux boilerplate for the inspiration and help setting up
 
 ### Features
 - [React](https://facebook.github.io/react)
