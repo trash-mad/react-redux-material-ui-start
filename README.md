@@ -7,4 +7,4 @@ Starter kit for using react, redux, webpack, babel and material ui
 - [Redux](https://github.com/rackt/redux)
 - [Webpack](https://webpack.github.io)
 - [Babel](https://babeljs.io)
-- [Material-Ui](https://material-ui.com/)
+- [Material-Ui](https://www.material-ui.com)
