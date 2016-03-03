@@ -1,12 +1,12 @@
-import { Provider } from 'react-redux';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from 'containers/App';
-import Store from './store';
+import 'babel-polyfill'
+import React from 'react'
+import { render } from 'react-dom'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import Root from './containers/Root'
 
-ReactDOM.render(
-  <Provider store={ Store() }>
-    <App />
-  </Provider>,
+injectTapEventPlugin()
+
+render(
+  <Root />,
   document.getElementById('root')
-);
+)
