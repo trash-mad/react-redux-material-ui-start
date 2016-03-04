@@ -1,7 +1,7 @@
 {
-  "name": "rr-boilerplate",
-  "description": "React&Redux boilerplate",
-  "author": "Alexander Tarasyuk",
+  "name": "react-redux-material-ui-start",
+  "description": "React-Redux-Material-UI-Start",
+  "author": "Joshua Goforth",
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {
