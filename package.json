@@ -5,10 +5,10 @@
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {
-    "clean": "node_modules/.bin/rimraf build/",
-    "build": "npm run clean && node_modules/.bin/webpack --config webpack/production.config.babel.js",
-    "dev-server": "node_modules/.bin/webpack-dev-server --config webpack/development.config.babel.js",
-    "start": "npm run build && node_modules/.bin/http-server build/ -p 9999 -o"
+    "clean": "node clean.js",
+    "build": "node build.js",
+    "dev-server": "node dev-server.js",
+    "start": "node start.js"
   },
   "devDependencies": {
     "babel": "^6.3.13",
