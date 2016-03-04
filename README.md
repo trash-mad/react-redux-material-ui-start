@@ -10,8 +10,10 @@ Starter kit for using react, redux, webpack, babel and material ui
 # Commands
 npm run build
 >builds project in build/ folder
+
 npm run dev-server
 >launches dev-server on localhost:9999 (Hot reloading... doesn't work with importing classes, fyi)
+
 npm start
 >runs build and launches server using production build
 
