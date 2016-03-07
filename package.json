@@ -5,10 +5,10 @@
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {
-    "clean": "node clean.js",
-    "build": "node build.js",
-    "dev-server": "node dev-server.js",
-    "start": "node start.js"
+    "clean": "cross-env node_modules/.bin/rimraf build/",
+    "build": "cross-env npm run clean && cross-env node_modules/.bin/webpack --config webpack/production.config.babel.js",
+    "dev-server": "cross-env node_modules/.bin/webpack-dev-server --config webpack/development.config.babel.js",
+    "start": "cross-env npm run build && cross-env node_modules/.bin/http-server build/ -p 9999 -o"
   },
   "devDependencies": {
     "babel": "^6.3.13",
@@ -18,6 +18,7 @@
     "babel-polyfill": "^6.6.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "cross-env": "^1.0.7",
     "css-loader": "^0.23.0",
     "eslint": "^1.10.3",
     "eslint-loader": "^1.1.1",
